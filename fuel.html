@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include CSS Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fuel Efficiency of Model Year 2017 Cars By Maker</title>
+</head>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<body onload='Init()'>
+    <h1 id="heading" class="heading"></h1>
+    <div class="checkbox-group">
+        <button id="Gasoline-button" class="back-button" onclick="GoHome()">Back</button>
+        <label class="checkbox">
+            <input id="Gasoline-checkbox" class="checkbox" type="checkbox" value="" onclick="UpdateSelectedFuels()">Gasoline
+        </label>
+        <label class="checkbox">
+            <input id="Diesel-checkbox" class="checkbox" type="checkbox" value="" onclick="UpdateSelectedFuels()"> Diesel
+        </label>
+        <label class="checkbox">
+            <input id="Electricity-checkbox" class="checkbox" type="checkbox" value="" onclick="UpdateSelectedFuels()">Electricity
+        </label>
+    </div>
+     
+    <svg width=1280 height=720>
+    </svg>
+
+    <!-- Include scene1 javascript file -->
+    <script src="cars2017mpg.js"></script>
+</body>
+</html>
