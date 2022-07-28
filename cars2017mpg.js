@@ -85,7 +85,8 @@ function LoadScene() {
          .append("title")
          .text(function(d) 
          {
-            var toolTipText = "Make: " + d.Make + "\n" +
+            var toolTipText = "Click to see more details"
+                              "Make: " + d.Make + "\n" +
                               "Number of Cylinders: " + d.EngineCylinders + "\n" +
                               "Fuel: " + d.Fuel + "\n" +
                               "City MPG: " + d.AverageCityMPG + "\n" +
@@ -146,9 +147,9 @@ function LoadScene() {
         .attr("y", parseInt(svg.style("height")) - 250)
         .attr("dy", "1em")
         .style("font-family", "verdana")   
-        .style("fill", "black")     
+        .style("fill", "blue")     
         .text(function(d) {
-            return "Red Circle: Gasoline Car.";
+            return "Blue Circle: Gasoline Car.";
         })
     svg.append("text")
     .attr("class", "annotation")
@@ -156,9 +157,9 @@ function LoadScene() {
     .attr("y", parseInt(svg.style("height")) - 250)
     .attr("dy", "2em")
     .style("font-family", "verdana")
-    .style("fill", "black")             
+    .style("fill", "red")             
     .text(function(d) {
-            return "Yellow Circle: Diesel Car.";
+            return "Red Circle: Diesel Car.";
     })
     svg.append("text")
     .attr("class", "annotation")
@@ -166,29 +167,29 @@ function LoadScene() {
     .attr("y", parseInt(svg.style("height")) - 250)
     .attr("dy", "3em")
     .style("font-family", "verdana")   
-    .style("fill", "black")          
+    .style("fill", "green")          
     .text(function(d) {
-            return "Blue Circle: Electric Car.";
+            return "Green Circle: Electric Car.";
     })
     svg.append("text")
         .attr("class", "annotation")
         .attr("x", parseInt(svg.style("width")) - 410)
         .attr("y", parseInt(svg.style("height")) - 600)
         .style("font-family", "verdana")
-        .style("fill", "black")             
+        .style("fill", "green")             
         .text(function(d) {
             if(null == SelectedMake)            
-                return "Electric cars: Range on full charge instead of MPG.";
+                return "For Electric cars use range on full charge instead of MPG.";
     })
     svg.append("text")
         .attr("class", "annotation")
         .attr("x", 45)
         .attr("y", parseInt(svg.style("height")) - 130)
         .style("font-family", "verdana")
-        .style("fill", "black")             
+        .style("fill", "red")             
         .text(function(d) {
             if(null == SelectedMake)
-                return "Higher the number of cylinders, lower the MPG.";
+                return "Hover on the circle to see details";
     });
 }
 
