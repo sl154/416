@@ -1,5 +1,5 @@
 circle {
-    fill: currentColor;
+    fill-color: currentColor;
     fill-opacity:0.3; 
     stroke-width: 1;
     cursor: pointer;    
