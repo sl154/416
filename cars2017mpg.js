@@ -85,8 +85,7 @@ function LoadScene() {
          .append("title")
          .text(function(d) 
          {
-            var toolTipText = "Click to see more details"
-                              "Make: " + d.Make + "\n" +
+            var toolTipText = "Make: " + d.Make + "\n" +
                               "Number of Cylinders: " + d.EngineCylinders + "\n" +
                               "Fuel: " + d.Fuel + "\n" +
                               "City MPG: " + d.AverageCityMPG + "\n" +
@@ -179,7 +178,7 @@ function LoadScene() {
         .style("fill", "green")             
         .text(function(d) {
             if(null == SelectedMake)            
-                return "For Electric cars use range on full charge instead of MPG.";
+                return "Electric cars: Range on full charge as MPG";
     })
     svg.append("text")
         .attr("class", "annotation")
@@ -189,7 +188,7 @@ function LoadScene() {
         .style("fill", "red")             
         .text(function(d) {
             if(null == SelectedMake)
-                return "Hover on the circle to see details";
+                return "Hover on the circle and click to see details";
     });
 }
 
