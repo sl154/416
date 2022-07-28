@@ -148,7 +148,7 @@ function LoadScene() {
         .style("font-family", "verdana")   
         .style("fill", "blue")     
         .text(function(d) {
-            return "Blue Circle: Gasoline Car.";
+            return "Blue Circle: Gasoline Car";
         })
     svg.append("text")
     .attr("class", "annotation")
@@ -158,7 +158,7 @@ function LoadScene() {
     .style("font-family", "verdana")
     .style("fill", "red")             
     .text(function(d) {
-            return "Red Circle: Diesel Car.";
+            return "Red Circle: Diesel Car";
     })
     svg.append("text")
     .attr("class", "annotation")
@@ -168,7 +168,7 @@ function LoadScene() {
     .style("font-family", "verdana")   
     .style("fill", "green")          
     .text(function(d) {
-            return "Green Circle: Electric Car.";
+            return "Green Circle: Electric Car";
     })
     svg.append("text")
         .attr("class", "annotation")
@@ -178,7 +178,7 @@ function LoadScene() {
         .style("fill", "green")             
         .text(function(d) {
             if(null == SelectedMake)            
-                return "Electric cars: Range on full charge as MPG";
+                return "Electric cars: use full charge range as MPG";
     })
     svg.append("text")
         .attr("class", "annotation")
