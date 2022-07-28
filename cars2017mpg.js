@@ -59,11 +59,11 @@ function LoadScene() {
          .append("circle")
          .attr("cx", function(d,i) { return xScale(parseInt(d.AverageCityMPG)); })
          .attr("cy", function(d,i) { return yScale(parseInt(d.AverageHighwayMPG)); })
-         .attr("r", function(d,i) { return ( 5 + (2 * parseInt(d.EngineCylinders))); })
+         .attr("r", function(d,i) { return ( 6 + (1.5 * parseInt(d.EngineCylinders))); })
          .attr("stroke", function(d) {
-             if("Gasoline" == d.Fuel) return "red";
-             else if ("Diesel" == d.Fuel) return "yellow";
-             else if ("Electricity" == d.Fuel) return "blue";
+             if("Gasoline" == d.Fuel) return "blue";
+             else if ("Diesel" == d.Fuel) return "red";
+             else if ("Electricity" == d.Fuel) return "green";
              else return "black";
          })
          .on('mouseover', function(d)
@@ -116,8 +116,8 @@ function LoadScene() {
         .attr("x", parseInt(svg.style("width"))/2)
         .attr("y", parseInt(svg.style("height")) - 65)
         .style("font-family", "verdana")
-        .style("fill", "dark gray")             
-        .text("Average City Mileage (MPG)");    
+        .style("fill", "black")             
+        .text("Average City Mile Per Gallon");    
 
     svg.append("text")
         .attr("class", "mainYlabel")
@@ -127,8 +127,8 @@ function LoadScene() {
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
-        .style("fill", "dark gray")             
-        .text("Average Highway Mileage (MPG)");
+        .style("fill", "black")             
+        .text("Average Highway Mile Per Gallon");
 
     // Annotations
     svg.append("text")
@@ -136,7 +136,7 @@ function LoadScene() {
         .attr("x", parseInt(svg.style("width")) - 400)
         .attr("y", parseInt(svg.style("height")) - 250)
         .style("font-family", "verdana")
-        .style("fill", "olive")             
+        .style("fill", "black")             
         .text(function(d) {
                 return "Size of Circle: Number of Cylinders.";
         })
@@ -146,7 +146,7 @@ function LoadScene() {
         .attr("y", parseInt(svg.style("height")) - 250)
         .attr("dy", "1em")
         .style("font-family", "verdana")   
-        .style("fill", "olive")     
+        .style("fill", "black")     
         .text(function(d) {
             return "Red Circle: Gasoline Car.";
         })
@@ -156,7 +156,7 @@ function LoadScene() {
     .attr("y", parseInt(svg.style("height")) - 250)
     .attr("dy", "2em")
     .style("font-family", "verdana")
-    .style("fill", "olive")             
+    .style("fill", "black")             
     .text(function(d) {
             return "Yellow Circle: Diesel Car.";
     })
@@ -166,7 +166,7 @@ function LoadScene() {
     .attr("y", parseInt(svg.style("height")) - 250)
     .attr("dy", "3em")
     .style("font-family", "verdana")   
-    .style("fill", "olive")          
+    .style("fill", "black")          
     .text(function(d) {
             return "Blue Circle: Electric Car.";
     })
@@ -175,7 +175,7 @@ function LoadScene() {
         .attr("x", parseInt(svg.style("width")) - 410)
         .attr("y", parseInt(svg.style("height")) - 600)
         .style("font-family", "verdana")
-        .style("fill", "olive")             
+        .style("fill", "black")             
         .text(function(d) {
             if(null == SelectedMake)            
                 return "Electric cars: Range on full charge instead of MPG.";
@@ -185,7 +185,7 @@ function LoadScene() {
         .attr("x", 45)
         .attr("y", parseInt(svg.style("height")) - 130)
         .style("font-family", "verdana")
-        .style("fill", "olive")             
+        .style("fill", "black")             
         .text(function(d) {
             if(null == SelectedMake)
                 return "Higher the number of cylinders, lower the MPG.";
