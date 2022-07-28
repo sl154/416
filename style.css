@@ -1,0 +1,27 @@
+circle {
+    fill:transparent; 
+    stroke-width: 3;
+    cursor: pointer;    
+}
+
+.mouseover-maker {
+    fill: lightgray;
+}
+
+.checkbox {
+    cursor: pointer;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+    font-size: medium;
+}
+
+.back-button {
+    cursor: pointer;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;          
+    font-size: medium;
+    width: 100px;
+}
+
+.heading {
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
