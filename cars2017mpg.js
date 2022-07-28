@@ -188,7 +188,7 @@ function LoadScene() {
         .style("fill", "red")             
         .text(function(d) {
             if(null == SelectedMake)
-                return "Hover on the circle and click to see details";
+                return "Hover and click on the circle to see details";
     });
 }
 
