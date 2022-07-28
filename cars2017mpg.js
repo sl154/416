@@ -182,7 +182,7 @@ function LoadScene() {
     })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", 45)
+        .attr("x", 100)
         .attr("y", parseInt(svg.style("height")) - 130)
         .style("font-family", "verdana")
         .style("fill", "red")             
