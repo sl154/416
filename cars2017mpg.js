@@ -42,7 +42,7 @@ function LoadScene() {
     /* Clear the previous scene */
     svg.selectAll("*").remove();
 
-    var padding = {top:200, right:200, bottom:200, left:200};
+    var padding = {top:100, right:200, bottom:200, left:200};
     var chartArea = {
                         "width":parseInt(svg.style("width")) - padding.left - padding.right,
                         "height":parseInt(svg.style("height")) - padding.top - padding.bottom
@@ -114,7 +114,7 @@ function LoadScene() {
         .attr("class", "mainXlabel")
         .attr("text-anchor", "end")
         .attr("x", parseInt(svg.style("width"))/2)
-        .attr("y", parseInt(svg.style("height")) - 65)
+        .attr("y", parseInt(svg.style("height")) - 20)
         .style("font-family", "verdana")
         .style("fill", "black")             
         .text("Average City Mile Per Gallon");    
@@ -122,8 +122,8 @@ function LoadScene() {
     svg.append("text")
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
-        .attr("x", -200)
-        .attr("y", 50)
+        .attr("x", -150)
+        .attr("y", 25)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
