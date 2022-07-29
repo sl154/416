@@ -122,8 +122,8 @@ function LoadScene() {
     svg.append("text")
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
-        .attr("x", parseInt(svg.style("width"))/2)
-        .attr("y", parseInt(svg.style("height"))/2)
+        .attr("x", 200)
+        .attr("y", -25)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
@@ -191,7 +191,7 @@ function LoadScene() {
         .text(function(d) {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click to see select brand.";
-            else if(null == SelectedFuel)
+            else
                 return "* Hover over circles to see details. Check fuel type box to see more models made by Maker.";
     });
 }
