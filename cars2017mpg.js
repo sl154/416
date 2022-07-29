@@ -87,7 +87,7 @@ function LoadScene() {
          {
             var toolTipText = "Make: " + d.Make + "\n" +
                               "Number of Cylinders: " + d.EngineCylinders + "\n" +
-                              "Fuel: " + d.Fuel + "\n" +
+                              "Fuel Type: " + d.Fuel + "\n" +
                               "City MPG: " + d.AverageCityMPG + "\n" +
                               "Highway MPG: " + d.AverageHighwayMPG;
             return toolTipText;
