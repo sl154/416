@@ -1,5 +1,5 @@
 body {
-    background: lightblue;
+    background: lightgrey;
     text-alighn: center;
 }
 
@@ -11,7 +11,7 @@ circle {
 }
 
 .mouseover-maker {
-    fill-opacity: 1;
+    fill-opacity: 0.9;
 }
 
 .checkbox {
