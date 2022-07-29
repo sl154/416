@@ -188,7 +188,7 @@ function LoadScene() {
         .style("fill", "red")             
         .text(function(d) {
             if(null == SelectedMake)
-                return "* Hover over the circle to see details. Click to see select brand.";
+                return "* Hover over circles to see details. Click to see select brand.";
     });
 }
 
