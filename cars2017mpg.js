@@ -114,7 +114,7 @@ function LoadScene() {
         .attr("class", "mainXlabel")
         .attr("text-anchor", "end")
         .attr("x", parseInt(svg.style("width"))/2)
-        .attr("y", parseInt(svg.style("height")) - 100)
+        .attr("y", parseInt(svg.style("height")) - 200)
         .style("font-family", "verdana")
         .style("fill", "black")             
         .text("Average City Mile Per Gallon");    
@@ -122,8 +122,8 @@ function LoadScene() {
     svg.append("text")
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
-        .attr("x", 150)
-        .attr("y", 25)
+        .attr("x", 250)
+        .attr("y", 75)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
@@ -133,8 +133,8 @@ function LoadScene() {
     // Annotations
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", parseInt(svg.style("width")) - 1000)
-        .attr("y", parseInt(svg.style("height")) - 40)
+        .attr("x", parseInt(svg.style("width")) - 1100)
+        .attr("y", parseInt(svg.style("height")) - 100)
         .style("font-family", "verdana")
         .style("fill", "black")             
         .text(function(d) {
@@ -142,8 +142,8 @@ function LoadScene() {
         })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", parseInt(svg.style("width")) - 1000)
-        .attr("y", parseInt(svg.style("height")) - 40)
+        .attr("x", parseInt(svg.style("width")) - 1100)
+        .attr("y", parseInt(svg.style("height")) - 100)
         .attr("dy", "1em")
         .style("font-family", "verdana")   
         .style("fill", "blue")     
@@ -152,8 +152,8 @@ function LoadScene() {
         })
     svg.append("text")
     .attr("class", "annotation")
-    .attr("x", parseInt(svg.style("width")) - 1000)
-    .attr("y", parseInt(svg.style("height")) - 40)
+    .attr("x", parseInt(svg.style("width")) - 1100)
+    .attr("y", parseInt(svg.style("height")) - 100)
     .attr("dy", "2em")
     .style("font-family", "verdana")
     .style("fill", "red")             
@@ -162,8 +162,8 @@ function LoadScene() {
     })
     svg.append("text")
     .attr("class", "annotation")
-    .attr("x", parseInt(svg.style("width")) - 1000)
-    .attr("y", parseInt(svg.style("height")) - 40)
+    .attr("x", parseInt(svg.style("width")) - 1100)
+    .attr("y", parseInt(svg.style("height")) - 100)
     .attr("dy", "3em")
     .style("font-family", "verdana")   
     .style("fill", "green")          
@@ -172,8 +172,8 @@ function LoadScene() {
     })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", parseInt(svg.style("width")) - 1000)
-        .attr("y", parseInt(svg.style("height")) - 40)
+        .attr("x", parseInt(svg.style("width")) - 1100)
+        .attr("y", parseInt(svg.style("height")) - 100)
         .style("font-family", "verdana")
         .style("fill", "green")             
         .text(function(d) {
@@ -182,13 +182,13 @@ function LoadScene() {
     })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", 800)
-        .attr("y", parseInt(svg.style("height")) - 100)
+        .attr("x", 700)
+        .attr("y", parseInt(svg.style("height")) - 300)
         .style("font-family", "verdana")
         .style("fill", "red")             
         .text(function(d) {
             if(null == SelectedMake)
-                return "Hover and click on the circle to see details";
+                return "* Hover and click on the circle to see details";
     });
 }
 
