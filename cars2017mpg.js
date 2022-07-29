@@ -122,8 +122,8 @@ function LoadScene() {
     svg.append("text")
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
-        .attr("x", -250)
-        .attr("y", 50)
+        .attr("x", -300)
+        .attr("y", 25)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
@@ -192,7 +192,7 @@ function LoadScene() {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click to see select brand.";
             else
-                return "* Hover over circles to see details. Check Fuel Type box for more models made by Maker.";
+                return "* Hover over circles to see details. Check Fuel Type box for more by select maker.";
     });
 }
 
