@@ -123,7 +123,7 @@ function LoadScene() {
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
         .attr("x", -150)
-        .attr("y", 125)
+        .attr("y", 140)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
