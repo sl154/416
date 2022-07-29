@@ -85,7 +85,7 @@ function LoadScene() {
          .append("title")
          .text(function(d) 
          {
-            var toolTipText = "Make: " + d.Make + "\n" +
+            var toolTipText = "Manufacturer: " + d.Make + "\n" +
                               "Number of Cylinders: " + d.EngineCylinders + "\n" +
                               "Fuel Type: " + d.Fuel + "\n" +
                               "City MPG: " + d.AverageCityMPG + "\n" +
