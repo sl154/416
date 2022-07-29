@@ -42,7 +42,7 @@ function LoadScene() {
     /* Clear the previous scene */
     svg.selectAll("*").remove();
 
-    var padding = {top:100, right:200, bottom:200, left:200};
+    var padding = {top:50, right:200, bottom:200, left:200};
     var chartArea = {
                         "width":parseInt(svg.style("width")) - padding.left - padding.right,
                         "height":parseInt(svg.style("height")) - padding.top - padding.bottom
