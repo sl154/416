@@ -183,16 +183,16 @@ function LoadScene() {
     })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", 550)
+        .attr("x", 450)
         .attr("y", parseInt(svg.style("height")) - 300)
         .style("font-family", "verdana")
         .style("fill", "red")
         .style("font-style", "italic") 
         .text(function(d) {
             if(null == SelectedMake)
-                return "* Hover over circles to see details. Click to see select brand.";
+                return "* Hover over circles to see details. Click on circles to see all cars by select maker.";
             else
-                return "* Hover over circles to see details. Check Fuel Type box for more by select maker.";
+                return "* Hover over circles to see details. Check Fuel Type box for more (if any) by select maker.";
     });
 }
 
