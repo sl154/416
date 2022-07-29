@@ -191,6 +191,8 @@ function LoadScene() {
         .text(function(d) {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click to see select brand.";
+            if(null == SelectedFuel)
+                return "* Hover over circles to see details. Select fuel type box to see more models made by Maker.";
     });
 }
 
