@@ -2,6 +2,10 @@ div.checkbox-group {
   text-align: center;
 }
 
+h3.checkbox-group {
+  font-style: italic;
+}
+
 h1 {text-align: center;}
 
 body {
