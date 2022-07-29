@@ -179,7 +179,7 @@ function LoadScene() {
         .style("font-style", "italic")      
         .text(function(d) {
             if(null == SelectedMake)            
-                return "* Note: For electric cars use full charge range as MPG";
+                return "* Note: For electric cars use full charge range as MPG.";
     })
     svg.append("text")
         .attr("class", "annotation")
