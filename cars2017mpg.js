@@ -122,7 +122,7 @@ function LoadScene() {
     svg.append("text")
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
-        .attr("x", -150)
+        .attr("x", -250)
         .attr("y", 0)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
