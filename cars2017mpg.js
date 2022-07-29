@@ -190,7 +190,7 @@ function LoadScene() {
         .style("font-style", "italic") 
         .text(function(d) {
             if(null == SelectedMake)
-                return "* Hover over circles to see details. Click on circles to see all cars by select maker.";
+                return "* Hover over circles to see details. Click on circles to see all vehicles by same manufacturer.";
             else
                 return "* Hover over circles to see details.";
     });
@@ -205,11 +205,11 @@ function GoHome() {
 function SetTitleAndCheckBoxes() {
     if(null != SelectedFuel) {
         document.getElementById("heading").innerText = 
-                "Fuel Efficiency of Model Year 2017 Cars Made by " + SelectedMake;
+                "Fuel Efficiency Scatterplot for Vehicles in 2017 Made by " + SelectedMake;
         document.getElementById(SelectedFuel + "-checkbox").checked = true; 
     }
     else {
-        document.getElementById("heading").innerText = "Fuel Efficiency of Model Year 2017 Cars";
+        document.getElementById("heading").innerText = "Fuel Efficiency Scatterplot for Vehicles in 2017";
     }
 }
 
