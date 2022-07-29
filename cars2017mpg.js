@@ -192,7 +192,7 @@ function LoadScene() {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click to see select brand.";
             else
-                return "* Hover over circles to see details. Check fuel type box to see more models made by Maker.";
+                return "* Hover over circles to see details. Check Fuel Type box for more models made by Maker.";
     });
 }
 
