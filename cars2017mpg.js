@@ -186,7 +186,8 @@ function LoadScene() {
         .attr("x", 600)
         .attr("y", parseInt(svg.style("height")) - 300)
         .style("font-family", "verdana")
-        .style("fill", "red")             
+        .style("fill", "red")
+        .style("font-style", "italic") 
         .text(function(d) {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click to see select brand.";
