@@ -42,7 +42,7 @@ function LoadScene() {
     /* Clear the previous scene */
     svg.selectAll("*").remove();
 
-    var padding = {top:50, right:200, bottom:200, left:200};
+    var padding = {top:10, right:200, bottom:200, left:200};
     var chartArea = {
                         "width":parseInt(svg.style("width")) - padding.left - padding.right,
                         "height":parseInt(svg.style("height")) - padding.top - padding.bottom
@@ -123,7 +123,7 @@ function LoadScene() {
         .attr("class", "mainYlabel")
         .attr("text-anchor", "end")
         .attr("x", -150)
-        .attr("y", 75)
+        .attr("y", 125)
         .attr("dy", ".5em")
         .attr("transform", "rotate(-90)")
         .style("font-family", "verdana")
@@ -192,7 +192,7 @@ function LoadScene() {
             if(null == SelectedMake)
                 return "* Hover over circles to see details. Click on circles to see all cars by select maker.";
             else
-                return "* Hover over circles to see details. Check Fuel Type box for more (if any) by select maker.";
+                return "* Hover over circles to see details.";
     });
 }
 
