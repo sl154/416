@@ -1,6 +1,6 @@
 circle {
-    fill-color: currentColor;
-    fill-opacity:0.3; 
+    color: currentcolor;
+    fill-opacity:0.1; 
     stroke-width: 1;
     cursor: pointer;    
 }
