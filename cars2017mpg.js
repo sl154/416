@@ -42,7 +42,7 @@ function LoadScene() {
     /* Clear the previous scene */
     svg.selectAll("*").remove();
 
-    var padding = {top:100, right:100, bottom:100, left:100};
+    var padding = {top:200, right:200, bottom:200, left:200};
     var chartArea = {
                         "width":parseInt(svg.style("width")) - padding.left - padding.right,
                         "height":parseInt(svg.style("height")) - padding.top - padding.bottom
@@ -178,12 +178,12 @@ function LoadScene() {
         .style("fill", "green")             
         .text(function(d) {
             if(null == SelectedMake)            
-                return "Note: Electric cars: use full charge range as MPG";
+                return "Note: For lectric cars use full charge range as MPG";
     })
     svg.append("text")
         .attr("class", "annotation")
-        .attr("x", 100)
-        .attr("y", parseInt(svg.style("height")) - 130)
+        .attr("x", 200)
+        .attr("y", parseInt(svg.style("height")) - 100)
         .style("font-family", "verdana")
         .style("fill", "red")             
         .text(function(d) {
